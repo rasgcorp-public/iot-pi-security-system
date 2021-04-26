@@ -1,0 +1,5 @@
+[pi4]
+192.168.200.32
+
+[pi4:vars]
+ansible_user=ubuntu

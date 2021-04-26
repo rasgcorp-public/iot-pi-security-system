@@ -1,0 +1,18 @@
+---
+  - name:  Install requirements
+    hosts: pi4
+    become: yes
+    tasks: 
+      - name: Install GPIOZERO
+        apt:
+          name: python3-gpiozero
+          update_cache: yes
+      - name: Install PIP
+        apt:
+          name: python3-pip
+          update_cache: yes
+      - name: Install python-telegram-bot 
+        pip:
+          name: python-telegram-bot 
+
+    
